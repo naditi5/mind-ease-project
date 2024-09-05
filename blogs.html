@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mental Health Quotes</title>
+  <link rel="stylesheet" href="blogs.css" />
+  <link rel="icon" type="image/svg+xml" href="Untitled design (4).png" />
+  
+</head>
+<body>
+  <div id="category" class="category">
+    <button class="navy-button" onclick="loadContent('Self-esteem')">Self-esteem</button>
+    <button class="navy-button" onclick="loadContent('Emotional Intelligence')">Emotional Intelligence</button>
+    <button class="navy-button" onclick="loadContent('Self-reflection')">Self-reflection</button>
+    <button class="navy-button" onclick="loadContent('Self-evaluation')">Self-evaluation</button>
+    <button class="navy-button" onclick="loadContent('Self-stigma')">Self-stigma</button>
+    <button class="navy-button" onclick="loadContent('Radical acceptance')">Radical acceptance</button>
+    <button class="navy-button" onclick="loadContent('Self-awareness')">Self-awareness</button>
+  </div>
+  
+  <br><br>
+  
+  <div id="current-content">
+    <h2>Four aspects of mental health</h2>
+      <div class="main-content" id="main-content" style="color: rgb(48, 142, 225); background-color: aliceblue;">
+        <p>When we think of being healthy, we often think about maintaining our physical health. An important but often neglected factor in staying healthy and vibrant throughout our lives is our mental health. Physical fitness is vital for maintaining a good quality of life, and mental health is equally important.<br>
+            <br>
+            There are four main aspects or pillars of mental health - 
+            <ul>
+                <li>Emotional</li>
+                <li>Social</li>
+                <li>Financial</li>
+                <li>Physical Health</li>
+            </ul>
+            Let's learn more about these and how they contribute to your overall mental health.<br>
+            <br>
+            <h3>Emotional</h3>
+            The emotional aspect of mental health has to do with one's ability to cope with both positive and negative emotions. It also includes your awareness of these emotions. People who are emotionally healthy develop healthy coping mechanisms to help them deal with negative emotions. They would probably also be able to recognise when they need to reach out to a professional for help with managing their emotional mental health. Emotional mental health includes self acceptance, self esteem, resilience and the ability to identify and manage strong emotions.<br>
+            <br>
+            Poor emotional health can negatively affect your body's immune system, which can increase your chances of catching a cold or other infections during emotionally difficult times. When you feel certain negative emotions such as stress, anxiety or when you are upset, you may neglect your physical health.<br>
+            <br>
+            <h3>Social</h3>
+            Relationships with other people (family, friends, colleagues, romantic partners, etc.) are an important part of life. They bring companionship, support and enrichment to our lives. Strong, healthy relationships usually have a positive effect on our mental health. People who have friends and other healthy relationships are generally physically and emotionally healthier and enjoy a better quality of life. If we lose a loved one, either through death or the ending of a relationship, or if we experience conflict in of one of our relationships, we are likely to feel emotions related to grief. Loneliness can have a negative effect on our mental health, and it can affect anyone, even when surrounded by others.<br>
+            <br>
+            <h3>Financial</h3>
+            Financial wellness is another important aspect of mental health. Financial wellness is not about earning or having a certain amount of money in your bank account. It's more about feeling in control of your finances, being able to manage financial setbacks and having the means to achieve your financial and life goals.<br>
+            <br>
+            Stress caused by financial issues can affect your sleep, self esteem and energy levels. It can affect your mood and leave you feeling angry, ashamed or fearful, and can cause tension and arguments with those closest to you. It can even increase your risk of depression and anxiety.<br>
+            <br>
+            <h3>Physical</h3>
+            Your physical health can have a big impact on your mental health. When we talk about physical health, we are referring to the efficient functioning of the body and its systems. Taking care of your physical health includes sleeping well and getting enough relaxation, keeping a healthy diet by eating foods that are good for your body, being physically active and maintaining good hygiene. Poor physical health can affect your confidence and self-esteem and can lead to unhappiness or even depression.<br>
+            <br>
+            Neglecting your mental health can have a negative impact on your resilience and make you more likely to make poor lifestyle choices. Taking steps to improve your mental health increases your ability to cope with stress and life's ups and downs. It can also improve your physical health, productivity at work, relationships and overall happiness.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container hidden" id="content-container">
+    <div id="links-container" class="links-container"></div>
+    <div id="description1-container" class="description-container"></div>
+    <div id="description2-container" class="description-container"></div>
+    <div id="description3-container" class="description-container"></div>
+  </div>
+   
+  <div id="info-container" class="info-container">
+    <p>Know more about Aspects of Mental Health</p>
+    <a href="https://www.discovery.co.za/corporate/four-aspect-affecting-your-mental-health-wellbeing#:~:text=There%20are%20four%20main%20aspects,to%20your%20overall%20mental%20health."><button >Know More</button></a>
+    <br><br>
+    <p>Do you want to know more about <span id="keyword-name"></span>?</p>
+    <button onclick="visitSite()">Visit Site</button>
+  </div>
+  <div class="intro-container">
+    <p>Learn more about mental health. Click the button below to know more.</p>
+    <a href="#category"><button>Click here</button></a>
+  </div>
+  <script src="blogs.js"></script>
+</body>
+</html>

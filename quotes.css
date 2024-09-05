@@ -1,0 +1,73 @@
+body {
+    background-color: #11174c;
+}
+
+.category {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px; /* Adjust the gap between buttons as needed */
+    margin: 20px 0; /* Add some margin for spacing */
+}
+
+.navy-button {
+    background-color: white;
+    color: #11174c;
+    border: 2px solid white;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 12px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navy-button:hover {
+    background-color: #11174c;
+    color: white;
+}
+
+.quote-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    display: none; /* Hidden by default */
+}
+
+.quote {
+    background-color: #f7f7f7;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.button-container {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+button {
+    justify-content: flex-end;
+    background-color: #2518de;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #2518de;
+    transform: scale(1.05);
+}
+
+button:active {
+    background-color: #2518de;
+    transform: scale(0.95);
+}

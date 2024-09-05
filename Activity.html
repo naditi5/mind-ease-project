@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Activity Description</title>
+  <link rel="stylesheet" href="Activity.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="Untitled design (4).png" />
+</head>
+<body>
+  <div class="navbar">
+    <div class="logo"><a href="#">Mind-Ease</a></div>
+    <ul class="links">
+      <li><a href="homePage.html">Home</a></li>
+      <li class="dropdown">
+        <a href="#" data-page="services">Services</a>
+        <ul class="dropdown-content">
+          <li><a href="mindboosting.html" target="_blank">Mindboosting Activities</a></li>
+          <li><a href="chatBot.html" target="_blank">Chatbot</a></li>
+          <li><a href="homeForResource.html" target="_blank">Resource Library</a></li>
+        </ul>
+      </li>
+      <li><a href="About.html">About Us</a></li>
+    </ul>
+  </div>
+  <a href="mindboosting.html" class="back-arrow">&#8592; </a>
+  <div class="main-content">
+    <div class="activity-card">
+      <div class="image-container">
+        <img id="activityImage" src="https://via.placeholder.com/800x400" alt="Activity Image" class="activity-image">
+      </div>
+      <div class="description-card">
+        <div id="activityContent" class="activity-content">
+          <h2>Activity Title</h2>
+          <p>This is the description of the activity. It provides details about what the activity involves and its benefits for mental wellness.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const activityDescriptions = {
+      '1': {
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQd_-DZ5vvsp4YsCziCXVCMX1FAEZsnPYNGyQ&s", 
+        content: `<h2>Get Lost in a Feel-Good Novel</h2>
+                  <p>There's nothing quite like the feeling of getting lost in a good book. A feel-good novel can transport you to another world, offering a delightful escape from the stresses of daily life.</p>
+                  <p>Choose a book that captures your interest, whether it's a heartwarming romance, an uplifting adventure, or a humorous story that makes you laugh out loud. Find a cozy spot, perhaps by a window with natural light or in your favorite chair, and immerse yourself in the story.</p>
+                  <p>As you turn the pages, you'll find yourself connecting with the characters, feeling their joys and sorrows, and experiencing their journeys as if they were your own. This not only helps to relax your mind but also boosts your mood, providing a sense of joy and fulfillment.</p>
+                  <p>So, pick up a feel-good novel today, and allow yourself to be swept away into a world of wonder and happiness. Happy reading!</p>`
+      },
+      '2': {
+        image: "https://miro.medium.com/v2/resize:fit:1200/1*u8beGWc_usPAyoStiIDBtg.jpeg",
+        content: `<h2>Challenge Yourself with a New Task</h2>
+                  <p>Challenging yourself with new tasks stimulates cognitive function, boosts confidence, and enhances overall mental well-being.</p>
+                  <p>Taking on a new task doesn't have to be daunting. Start small with manageable challenges and gradually increase the difficulty as you build confidence. Whether it's learning a new skill, starting a creative project, or setting a personal goal, each step forward is a victory for your mental health.</p>
+
+                  <p>Remember, the journey of challenging yourself is just as important as the destination. Embrace the process, celebrate your progress, and watch as your mind becomes more resilient, creative, and fulfilled. By continuously pushing your boundaries, you not only enhance your mental well-being but also unlock your full potential.</p>`
+      },
+      '3': {
+        image: "https://gendermatters.in/wp-content/uploads/2015/12/Dance-Site-Banner.jpg",
+        content: `<h2>Listen to Music, Dance</h2>
+                  <p>Listening to music and dancing are powerful tools for boosting mental health and emotional well-being. </p>
+                  <p>Music has the ability to transport us, evoke memories, and change our mood within moments. When you listen to your favorite songs, your brain releases dopamine, making you feel happy and motivated. Dancing amplifies these benefits by engaging your body in rhythmic movement, which increases blood flow and releases endorphins, further enhancing your mood. Additionally, dancing can improve cognitive function, balance, and coordination, while also providing a sense of accomplishment and joy.</p>
+                  <p> Whether you're dancing alone in your living room or with friends at a social gathering, this delightful activity encourages self-expression, reduces anxiety, and fosters a deeper connection to yourself and others. So, turn up the volume, let the music take over, and dance your way to a happier, healthier you!.</p>`
+      },
+      '4': {
+        image: "https://www.esamskriti.com/essays/docfile/45_6819.jpg",
+        content: `<h2>Meditation & Yoga</h2>
+                  <p>Meditation and yoga are transformative practices that offer profound benefits for mental health and overall well-being. Meditation helps calm the mind, reduce stress, and increase focus by encouraging mindfulness and present-moment awareness. This practice allows you to step back from the chaos of daily life, fostering a sense of inner peace and clarity.</p>
+
+                  <p>Yoga, which combines physical postures, breath control, and meditation, enhances both mental and physical health. The physical aspect of yoga improves flexibility, strength, and balance, while the controlled breathing and meditative focus help lower stress levels and promote relaxation. Together, meditation and yoga create a holistic approach to well-being, reducing anxiety, enhancing mood, and promoting a deep sense of tranquility and balance.</p>
+
+                  <p>Incorporating meditation and yoga into your daily routine can lead to lasting improvements in your mental and physical health.</p>`
+      },
+      '5': {
+        image: "https://miro.medium.com/v2/resize:fit:800/1*t_9zNSzNnby9DLZ9EMK2hg.png",
+        content: `<h2>Unplug and Rediscover Peace</h2>
+                  <p>Taking a digital break is like hitting the refresh button for your mind and soul. In our hyper-connected world, we're constantly bombarded with notifications, messages, and information, which can leave us feeling overwhelmed and mentally exhausted. Stepping away from screens, even for a short period, allows your mind to recharge, reduces stress, and helps you reconnect with the present moment.<p>
+
+                  <p>Imagine spending time outdoors, feeling the sun on your face, and breathing in fresh air without the distraction of a smartphone. Or indulging in a hobby you love, like reading a book, painting, or gardening, where you can lose yourself in creativity and joy. A digital break also gives you the chance to connect more deeply with the people around you, fostering meaningful conversations and experiences.</p>
+
+                  <p>By consciously unplugging from technology, you create space for reflection, relaxation, and genuine human connection. This not only rejuvenates your mind but also enhances your overall well-being. So, set aside your devices, embrace the tranquility of a digital detox, and rediscover the simple pleasures that life has to offer. Your mind will thank you for it!</p>`
+      },
+      '6': {
+        image: "https://play-lh.googleusercontent.com/KNpR3odh4Y4PFSgjsdIgJDFKJF76XWqiTj-xHHkhlasmIHqmFAeRbueszMsT-ER2JQ=w526-h296-rw",
+        content: `<h2>Watch Funny Videos on Social Media</h2>
+                  <p>Watching funny videos on social media is like a quick and delightful escape from the stresses of everyday life. A few moments of laughter can instantly uplift your spirits, bringing a burst of joy and positivity to your day. Whether it's adorable animal antics, hilarious fails, or clever comedy sketches, these short clips have the magical ability to make you laugh out loud and forget your worries, even if just for a little while.</p>
+
+                  <p>Sharing these funny moments with friends and family can also strengthen your connections, sparking shared laughter and conversations. It's a simple, yet powerful way to boost your mood, lighten your heart, and remind you of the joy in life's little absurdities. So, next time you need a quick pick-me-up, dive into the world of funny videos and let the laughter refresh your mind and brighten your day.</p>`
+      },
+      '7': {
+        image: "https://previews.123rf.com/images/gstockstudio/gstockstudio1506/gstockstudio150600186/40891799-happy-family-of-five-people-talking-to-each-other-and-smiling-while-sitting-outdoors-together.jpg",
+        content: `<h2>Connect Through a Heartfelt Conversation</h2>
+                  <p>Engaging in heartfelt conversations is a powerful way to nourish your mind and soul. When you open up and share your thoughts, feelings, and experiences with someone you trust, you create a space for genuine connection and understanding. This act of vulnerability and honesty can significantly reduce stress and anxiety, as it allows you to unburden your mind and receive empathy and support in return.</p>
+
+                  <p>These meaningful exchanges also promote emotional healing and resilience. By discussing your challenges and triumphs, you gain new perspectives and insights, helping you navigate life's complexities with greater clarity and confidence. Heartfelt conversations can rekindle joy, foster a sense of belonging, and strengthen the bonds that enrich your life.</p>
+
+                  <p>Ultimately, connecting through sincere dialogue revitalizes your mind, leaving you with a renewed sense of purpose, happiness, and inner peace.</p>`
+      },
+      '8': {
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9adGRvxSmmlg1sY-7Xa1XoVezPfQWTR6Vpw&s",
+        content: `<h2>Coloring</h2>
+                  <p>Coloring is a delightful and therapeutic activity that brings out the creative child in everyone. This simple yet engaging task can significantly boost mental health by offering a relaxing escape from daily stressors. When you immerse yourself in coloring, your mind enters a state of flow, allowing you to focus on the present moment and let go of worries. This meditative state helps reduce anxiety and fosters mindfulness.</p>
+
+              <p>Coloring also stimulates brain areas related to motor skills, creativity, and concentration. It can serve as a form of self-expression, enabling you to convey emotions and thoughts without words. As you fill each page with vibrant hues, you experience a sense of accomplishment and joy, enhancing your overall mood.</p>
+
+              <p>Whether you're choosing colors for intricate patterns or simple designs, coloring provides a gentle yet effective way to unwind and rejuvenate your mind. It's a creative outlet that offers both relaxation and a splash of happiness in your daily routine.</p>`
+      },
+      '9': {
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJXT-AMeAOM1QsrgcnS9JgyBs4_dolVb9icA&s",
+        content: `<h2>Gardening</h2>
+                  <p>Gardening is a nurturing and rewarding activity that brings numerous benefits to mental health and well-being. Tending to plants and flowers connects you with nature, offering a peaceful retreat from the hustle and bustle of everyday life. The simple act of planting, watering, and watching your garden grow fosters a sense of accomplishment and purpose.</p>
+
+                  <p>Engaging in gardening allows you to focus on the present moment, cultivating mindfulness and reducing stress. The physical activity involved in gardening, such as digging, planting, and weeding, promotes physical health, while the sensory experience of touching soil, smelling flowers, and listening to nature's sounds enhances mental relaxation.</p>
+
+                  <p>Gardening also encourages patience and perseverance as you nurture plants over time. This process of growth and renewal mirrors personal growth, providing a metaphorical lesson in resilience and the rewards of consistent effort.</p>`
+      },
+      '10' :{
+        
+          image:"https://st3.depositphotos.com/9880800/13987/i/450/depositphotos_139877122-stock-photo-woman-preparing-salad.jpg",
+          content:`<h2>Cooking</h2>
+          <p>Cooking can be an excellent way to divert our mind when we are stressed as it engages all our senses—sight, smell, taste, touch, and hearing—bringing us into the present moment. 
+            The process requires focus and attention to detail, fostering mindfulness and distracting us from stressors. 
+            It provides a creative outlet, allowing for experimentation with recipes and flavors, which can be both satisfying and therapeutic.
+             The structured, step-by-step nature of cooking offers a sense of order and control, while the physical activity involved helps release built-up tension. 
+             Completing a dish gives a sense of accomplishment and self-care, and the act of preparing and sharing meals with others can foster social connections, further alleviating stress. 
+            By immersing ourselves in cooking, we not only nourish our bodies but also support our mental well-being through a holistic and enjoyable practice.</p>`
+      },
+      '11':{
+        image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOlaU3oScgTfshcIpYrml5OrMmXtG6n9Aemw&s",
+        content:`<h2>Sleep</h2>
+                <p>Sleep is a fundamental pillar of mental health and overall well-being. Adequate, restful sleep is essential for cognitive function, emotional regulation, and physical health. When you prioritize good sleep, you're investing in your mind and body's ability to rejuvenate and perform at their best.</p>
+
+<p>During sleep, the brain processes emotions, consolidates memories, and clears out toxins that accumulate throughout the day. This nightly restoration helps enhance mood, improve concentration, and boost creativity. Quality sleep also strengthens the immune system, supports heart health, and regulates metabolism, contributing to a healthier, more balanced life.
+
+Establishing a regular sleep routine and creating a calming bedtime environment can lead to better sleep hygiene. This includes reducing screen time before bed, practicing relaxation techniques, and ensuring your sleep space is comfortable and quiet.</p>
+
+<p>By valuing and prioritizing sleep, you're giving yourself the gift of mental clarity, emotional stability, and physical vitality. Embrace the power of restful sleep to wake up refreshed, energized, and ready to face each day with a positive mindset.</p>`
+      },
+      '12':{
+        image:"https://t3.ftcdn.net/jpg/01/85/28/38/360_F_185283841_Nc58JUCf7FzWkD3LPrOxOvpMLWWcA02N.jpg",
+        content:`<h2>Petting Animals</h2>
+        <p>Petting animals offers a delightful and soothing way to boost your mental health and well-being. The simple act of stroking a pet can release a cascade of positive chemicals in your brain, including oxytocin, often referred to as the "love hormone." This natural mood booster helps reduce stress, anxiety, and feelings of loneliness.</p>
+
+        <p>Interacting with animals can lower blood pressure and heart rate, promoting a sense of calm and relaxation. Pets provide companionship and unconditional love, which can enhance your emotional resilience and provide a sense of purpose and belonging.<p>
+
+        <p>Whether it's cuddling with a cat, playing fetch with a dog, or simply watching fish swim in a tank, the presence of animals can bring joy and comfort into your life. This connection with animals encourages mindfulness, grounding you in the present moment and providing a break from daily stresses.
+
+        Embrace the healing power of petting animals and let their companionship and love elevate your mood and enrich your life.</p>`
+      },
+      '13':{
+        image:"https://miro.medium.com/v2/resize:fit:1080/1*fvs-vn_5gE9WeH9rJnVNtg.jpeg",
+        content:`<h2>Affirmations</h2>
+        <p>Affirmations are powerful tools that can significantly enhance your mental health and overall well-being. By regularly repeating positive statements about yourself, you can reprogram your mind to foster a more optimistic and self-empowered outlook. Affirmations help combat negative thoughts and self-doubt, replacing them with confidence and self-belief.</p>
+
+        <p>When you consistently use affirmations, you create a positive internal dialogue that reinforces your strengths and abilities. This practice can reduce stress, anxiety, and depression by shifting your focus away from negative self-perceptions and towards a more constructive and supportive mindset.</p>
+
+        <p>Incorporating affirmations into your daily routine can boost your resilience, motivation, and overall sense of happiness. Start each day with affirmations like "I am capable and strong," "I deserve happiness and success," or "I am enough just as I am." These simple yet powerful statements can transform your mindset, helping you navigate challenges with greater ease and embrace a more positive and fulfilling life.</p>`
+      },
+      '14':{
+        image:"https://www.naukri.com/campus/career-guidance/wp-content/uploads/2023/07/hobbies-for-resume.png",
+        content:`<h2>Hobbies</h2>
+                <p>Engaging in hobbies is a delightful way to rejuvenate your mind and spirit. Hobbies allow you to explore your passions and creativity, providing a sense of accomplishment and joy. Whether it's painting, gardening, playing a musical instrument, or cooking, hobbies offer a healthy escape from the stresses of daily life.</p>
+
+                <p>Dedicating time to activities you love can significantly boost your mental health by fostering a sense of purpose and fulfillment. Hobbies encourage mindfulness, allowing you to immerse yourself fully in the moment and experience a sense of flow. This can help reduce anxiety and increase overall happiness.</p>
+
+                <p>Moreover, hobbies often lead to skill development and personal growth, enhancing your self-esteem and confidence. They provide opportunities to connect with others who share similar interests, fostering social bonds and a sense of community.</p>`
+      },
+      '15':{
+        image:"https://cdn.pixabay.com/photo/2023/03/25/20/30/podcast-7876792_640.jpg",
+        content:`<h2>Podcast</h2>
+        <p>Podcasts are a powerful medium that enriches our lives in numerous ways. They provide a gateway to endless knowledge, diverse perspectives, and inspiring stories, all easily accessible at any time. Whether you're commuting, exercising, or simply relaxing at home, podcasts offer a valuable opportunity to learn something new, stay informed, or delve into topics that pique your curiosity. They bring experts, storytellers, and thought leaders directly to you, fostering a sense of connection and community through shared interests. Beyond entertainment, podcasts stimulate creativity, spark meaningful conversations, and encourage personal growth by challenging perspectives and expanding horizons.</p>
+        <p> Embracing podcasts means embracing a world of possibilities, where each episode is a chance to discover, learn, and be inspired.</p>`
+      }
+    };
+
+    function loadActivityDescription() {
+      const urlParams = new URLSearchParams(window.location.search);
+      const activityId = urlParams.get('activity');
+
+      if (activityDescriptions.hasOwnProperty(activityId)) {
+        const activity = activityDescriptions[activityId];
+        document.getElementById('activityImage').src = activity.image;
+        document.getElementById('activityContent').innerHTML = activity.content;
+      }
+    }
+
+    document.addEventListener('DOMContentLoaded', loadActivityDescription);
+  </script>
+</body>
+</html>

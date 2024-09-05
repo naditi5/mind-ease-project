@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>30 Days Happiness Challenge</title>
+  <link rel="stylesheet" href="challenge.css">
+  <link rel="icon" type="image/svg+xml" href="Untitled design (4).png" />
+</head>
+<body>
+  <div class="navbar">
+    <div class="logo"><a href="#">Mind-Ease</a></div>
+    <ul class="links">
+      <li><a href="homePage.html">Home</a></li>
+      <li><a href="#" data-page="services">Services</a></li>
+      <li><a href="About.html" data-page="aboutus">About Us</a></li>
+    </ul>
+  </div>
+  <div class="container">
+    <h1 class="title">30 Days Happiness Challenge</h1>
+    <div id="challengeContent" class="challenge-content">
+      <!-- Challenge content will be displayed here -->
+    </div>
+    <div class="button-group">
+      <button id="prevButton" class="button prev-button" onclick="prevChallenge()">Back</button>
+      <button id="nextButton" class="button next-button" onclick="nextChallenge()">Next</button>
+    </div>
+    <a href="mindboosting.html" class="button back-button">Back to Activities</a>
+  </div>
+
+  <script>
+    const challenges = [
+      "Day 1: Smile at a stranger",
+      "Day 2: Write down three things you are grateful for",
+      "Day 3: Take a walk in nature",
+      "Day 4: Try a new hobby",
+      "Day 5: Meditate for 10 minutes",
+      "Day 6: Watch a funny movie",
+      "Day 7: Call a friend you haven't talked to in a while",
+      "Day 8: Spend time with a loved one",
+      "Day 9: Practice deep breathing",
+      "Day 10: Read a book for pleasure",
+      "Day 11: Write a thank you note to someone",
+      "Day 12: Declutter a small area of your home",
+      "Day 13: Try cooking a new recipe",
+      "Day 14: Exercise for at least 30 minutes",
+      "Day 15: Spend some time in the sun",
+      "Day 16: Do a random act of kindness",
+      "Day 17: Reflect on your goals and dreams",
+      "Day 18: Enjoy a cup of tea or coffee without distractions",
+      "Day 19: Listen to your favorite music",
+      "Day 20: Draw or color something",
+      "Day 21: Take a digital detox for a day",
+      "Day 22: Write in a journal",
+      "Day 23: Plant a flower or a tree",
+      "Day 24: Watch the sunrise or sunset",
+      "Day 25: Practice mindfulness for 10 minutes",
+      "Day 26: Go for a bike ride or run",
+      "Day 27: Volunteer or help someone in need",
+      "Day 28: Create a vision board",
+      "Day 29: Spend time with your pet or visit an animal shelter",
+      "Day 30: Reflect on the past month and plan for the next one"
+    ];
+
+    let currentChallengeIndex = 0;
+
+    function displayChallenge() {
+      document.getElementById("challengeContent").innerText = challenges[currentChallengeIndex];
+      document.getElementById("prevButton").disabled = currentChallengeIndex === 0;
+      document.getElementById("nextButton").disabled = currentChallengeIndex === challenges.length - 1;
+    }
+
+    function nextChallenge() {
+      if (currentChallengeIndex < challenges.length - 1) {
+        currentChallengeIndex++;
+        displayChallenge();
+      }
+    }
+
+    function prevChallenge() {
+      if (currentChallengeIndex > 0) {
+        currentChallengeIndex--;
+        displayChallenge();
+      } else {
+        window.location.href = "mindboosting.html";
+      }
+    }
+
+    // Initial display
+    displayChallenge();
+  </script>
+</body>
+</html>

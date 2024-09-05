@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="icon" type="image/svg+xml" href="Untitled design (4).png" />
+  <title>psychiatrist App</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #5372F0;
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+    }
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      padding: 20px;
+      background-color: white;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      max-width: 900px;
+    }
+    .header h1 {
+      margin: 0;
+      text-align: center;
+      flex-grow: 1;
+    }
+    .card-container {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      max-width: 900px;
+    }
+    .card {
+      background-color: white;
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      display: flex;
+      align-items: center;
+    }
+    .card .profile-picture {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      overflow: hidden;
+      margin-right: 20px;
+    }
+    .card .profile-picture img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .card .details {
+      flex-grow: 1;
+    }
+    .card .name {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+    .card .profession {
+      color: #666;
+      margin-bottom: 10px;
+    }
+    .card .location {
+      display: flex;
+      align-items: center;
+      font-size: 16px;
+    }
+    .card .location i {
+      margin-right: 5px;
+    }
+    .card .rating {
+      display: flex;
+      align-items: center;
+      margin-top: 10px;
+      font-size: 16px;
+    }
+    .card .rating i {
+      color: #ffc107;
+      margin-right: 5px;
+    }
+    .card .rating span {
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <a href="#">
+        <i class="fas fa-arrow-left"></i>
+      </a>
+      <h1>psychiatrist</h1>
+      <div></div>
+    </div>
+    <div class="card-container">
+      <div class="card">
+        <div class="profile-picture">
+          <img src="https://www.asterhospitals.in/sites/default/files/styles/doctors_details_xl/public/2023-12/Dr.%20%20NITHIN%20%20KONDAPURAM%20%20400x500%20px%20%281%29.jpg.webp?itok=c9679mm1" alt="Profile Picture">
+        </div>
+        <div class="details">
+          <div class="name">Dr.Nithin Kondapuram</div>
+          <div class="profession">Psychiatrist </div>
+          <div class="location">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Hyderabad, Telangana</span>
+          </div>
+          <div class="rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <span>4.8</span>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        
+        <div class="profile-picture">
+          <img src="https://imagesx.practo.com/providers/dr-boppana-sridhar-neuropsychiatrist-hyderabad-5e2d003c-d849-444e-9aee-25b667bada30.jpg?i_type=t_70x70" alt="Profile Picture">
+        </div>
+        <div class="details">
+          <div class="name">Dr. Boppana Sridhar</div>
+          <div class="profession"></div>
+          <div class="profession">Psychiatrist</div>
+          <div class="location">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Hyderabad, Telangana</span>
+          </div>
+          <div class="rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <span>4.5</span>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="profile-picture">
+          <img src="https://lh5.googleusercontent.com/p/AF1QipNptk_40UHw8aroya_dZpMl2TZ8XNwhnWfAceUv=w173-h175-n-k-no" alt="Profile Picture">
+        </div>
+        <div class="details">
+          <div class="name">Dr. Siva Anoop Yella</div>
+          <div class="profession">Psychiatrist</div>
+          <div class="location">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Hyderabad, Telangana</span>
+          </div>
+          <div class="rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+            <span>4.3</span>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="profile-picture">
+          <img src="https://imagesx.practo.com/providers/dr-g-prasad-rao-psychiatrist-hyderabad-044966ae-1909-4a4f-aef3-12143bdd2ab6.jpg?i_type=t_70x70" alt="Profile Picture">
+        </div>
+        <div class="details">
+          <div class="name">Dr G Prasad Rao</div>
+          <div class="profession">Psychiatrist</div>
+          <div class="location">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Hyderabad, Telangana</span>
+          </div>
+          <div class="rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+            <span>4.0</span>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="profile-picture">
+          <img src="https://imagesx.practo.com/providers/dr-b-kranthi-kiran-psychiatrist-hyderabad-a52f0521-b81c-4387-a506-5bb7e06ae94c.jpg?i_type=t_70x70" alt="Profile Picture">
+        </div>
+        <div class="details">
+          <div class="name">Dr B.Kranthi Kiran</div>
+          <div class="profession">Psychiatrist</div>
+          <div class="location">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Hyderabad, Telangana</span>
+          </div>
+          <div class="rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+            <i class="far fa-star"></i>
+            <span>3.8</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://kit.fontawesome.com/51947f78dc.js" crossorigin="anonymous"></script>
+</body>
+</html>

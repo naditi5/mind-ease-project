@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mental Wellness Hub</title>
+    <link rel="stylesheet" href="About.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="Untitled design (4).png" />
+</head>
+<body>
+    <section id="about-us">
+        <div class="back-arrow" onclick="history.back()">&larr; Back</div>
+        <div class="header">
+            <h1>About Mind-Ease</h1>
+        </div>
+        <div class="content">
+            <p>Welcome to the Mental Wellness Hub, your dedicated sanctuary for nurturing mental health and well-being. In today's fast-paced world, maintaining mental wellness is more crucial than ever. At the Mental Wellness Hub, we understand the challenges you face and are here to offer unwavering support, resources, and tools to help you thrive emotionally and mentally.</p>
+            <p>Our platform is thoughtfully designed to provide a holistic approach to mental health, integrating various elements that promote positivity, resilience, and happiness. Whether you're seeking a boost of motivation, engaging activities to lift your spirits, or valuable insights to foster personal growth, the Mental Wellness Hub is your go-to resource.</p>
+            <p>We believe that mental wellness is a journey, not a destination, and we're here to walk this path with you. Our mission is to create a compassionate and stigma-free space where you can explore and enhance your mental health, connect with supportive resources, and find joy in the everyday moments.</p>
+            
+            <h2>Our Services</h2>
+            <ul>
+                <li><a href="#mood-boosting-activities" class="service-link">Mood Boosting Activities</a></li>
+                <li><a href="#friendly-chatbot" class="service-link">Friendly Chatbot</a></li>
+                <li><a href="#resource-library" class="service-link">Resource Library</a></li>
+            </ul>
+
+            <h3 id="mood-boosting-activities" class="collapsible">Mood Boosting Activities</h3>
+            <div class="content-section">
+                <p>Our mood-boosting activities are designed to help you relax, recharge, and find joy in everyday moments. From creative exercises and mindfulness practices to physical activities and social engagement, our activities are carefully curated to enhance your overall well-being.</p>
+                <p><strong>Creative Exercises:</strong> Engage in a variety of creative exercises that stimulate your mind and allow you to express yourself. Whether it's drawing, painting, writing, or crafting, these activities help you tap into your creativity and relieve stress.</p>
+                <p><strong>Mindfulness Practices:</strong> Discover the power of mindfulness with practices that help you stay present and focused. Our guided meditations, breathing exercises, and relaxation techniques are designed to reduce anxiety and promote a sense of calm.</p>
+                <p><strong>Physical Activities:</strong> Participate in physical activities that boost your mood and energy levels. From yoga and stretching routines to dance and aerobic exercises, staying active is a key component of mental wellness.</p>
+                <p><strong>Social Engagement:</strong> Connect with others through group activities and social events. Building a supportive community and engaging in social interactions can significantly improve your emotional well-being.</p>
+                <p><strong>30-Day Happiness Challenge:</strong> Join our 30-day happiness challenge, a structured program that guides you through daily activities aimed at increasing your happiness and emotional resilience. Each day presents a new challenge designed to foster positive habits and a more joyful outlook on life.</p>
+            </div>
+
+            <h3 id="friendly-chatbot" class="collapsible">Friendly Chatbot</h3>
+            <div class="content-section">
+                <p>Our friendly chatbot is your virtual companion, dedicated to providing motivation, comfort, and ease. Engage in meaningful conversations with our chatbot, which offers encouragement and support whenever you need it. Whether you're feeling down or just need a boost, our chatbot is here to help you stay positive and motivated.</p>
+                <p>The chatbot uses advanced AI to understand your emotions and respond in a compassionate, helpful manner. It's like having a supportive friend available 24/7, ready to lift your spirits and offer guidance.</p>
+                <p><strong>Motivational Messages:</strong> Receive daily motivational messages that inspire and uplift you. Our chatbot provides words of encouragement to help you start your day with a positive mindset.</p>
+                <p><strong>Personalized Support:</strong> Based on your interactions, our chatbot offers personalized advice and suggestions to improve your mental wellness. Whether you need tips for managing stress or strategies for staying motivated, our chatbot tailors its responses to meet your needs.</p>
+                <p><strong>Interactive Conversations:</strong> Engage in interactive conversations that allow you to express your thoughts and feelings. Our chatbot is trained to listen and respond empathetically, providing a safe space for you to share and reflect.</p>
+            </div>
+
+            <h3 id="resource-library" class="collapsible">Resource Library</h3>
+            <div class="content-section">
+                <p>Our resource library is a treasure trove of motivational and inspirational content. We provide a vast collection of quotes, videos, and articles focused on mental health and personal growth. The library is designed to inspire and empower you, offering valuable insights and practical advice on building mental strength and resilience.</p>
+                <p><strong>Inspirational Quotes:</strong> Browse through our collection of inspirational quotes that offer wisdom and encouragement. These quotes are carefully selected to resonate with you and provide a boost of positivity.</p>
+                <p><strong>Informative Articles:</strong> Read articles written by mental health experts that cover a wide range of topics, from coping with stress to building resilience. Our articles provide in-depth knowledge and practical tips to help you navigate life's challenges.</p>
+                <p><strong>Motivational Videos:</strong> Watch motivational videos that tell inspiring stories and provide actionable advice. Our video library is a source of inspiration that can help you stay motivated and focused on your mental wellness journey.</p>
+                <p>We regularly update our library with new content, ensuring you always have access to the latest information and resources to support your mental health journey.</p>
+            </div>
+
+            <h2>Our Vision</h2>
+            <p>At the Mental Wellness Hub, we believe that mental health is just as important as physical health. Our vision is to create a world where everyone has the tools and support they need to maintain mental well-being. We are committed to promoting a positive, stigma-free approach to mental health, encouraging open conversations and providing accessible resources for all.</p>
+            <p>We invite you to join our community and take advantage of the resources and support we offer. Together, we can build a happier, healthier world where mental wellness is a priority.</p>
+            <p>Thank you for choosing the Mental Wellness Hub as your partner in mental health and well-being. We are here to support you every step of the way.</p>
+        </div>
+    </section>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+    const collapsibles = document.querySelectorAll('.collapsible');
+    collapsibles.forEach(collapsible => {
+        collapsible.addEventListener('click', () => {
+            collapsible.classList.toggle('active');
+            const content = collapsible.nextElementSibling;
+            if (collapsible.classList.contains('active')) {
+                content.style.maxHeight = content.scrollHeight + 'px';
+            } else {
+                content.style.maxHeight = null;
+            }
+        });
+    });
+
+    const serviceLinks = document.querySelectorAll('.service-link');
+    serviceLinks.forEach(link => {
+        link.addEventListener('click', (event) => {
+            event.preventDefault();
+            const targetId = link.getAttribute('href').substring(1);
+            const targetSection = document.getElementById(targetId);
+            targetSection.scrollIntoView({ behavior: 'smooth' });
+        });
+    });
+});
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,196 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #11174c;
+  display: flex;
+  line-height: 1;
+  flex-direction: column; 
+  color: white; 
+}
+
+.navbar {
+  width: 100%;
+  height: 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar .logo a {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+}
+
+.navbar .links {
+  display: flex;
+  align-items: end;
+  gap: 2rem;
+}
+
+li {
+  list-style: none;
+  position: relative; /* Add this */
+}
+
+.navbar .links a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  transition: color 0.2s ease; /* Add this */
+}
+
+.navbar .links a:hover {
+  color: rgb(21, 172, 236);
+}
+
+/* Add this */
+.navbar .links a::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: rgb(247, 245, 245);
+  transition: width 0.2s ease;
+}
+
+.navbar .links a:hover::before {
+  width: 100%;
+}
+
+.navbar .links .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.navbar .links .dropdown-content li {
+  list-style: none;
+}
+
+.navbar .links .dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.navbar .links .dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.navbar .links .dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.flip-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 20px auto;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 200px;
+  height: 300px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #333;
+  color: white;
+  border-radius: 10px;
+}
+
+.flip-card-front img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+
+.flip-card-front h2 {
+  margin: 10px 0;
+  font-size: 1.2rem;
+}
+
+.flip-card-back {
+  background-color: #11174c;
+  color: white;
+  transform: rotateY(180deg);
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.flip-card-back p {
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.animated-text {
+  position: fixed;
+  bottom: 125px;
+  right: 20px;
+  color: white;
+  font-size: 20px;
+  animation: fadeInOut 2s infinite, bounce 2s infinite; 
+  z-index: 1000;
+  text-align: center;
+  width: 100px; 
+}
+
+#challengeButton {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 100px;
+  height: auto;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+@keyframes fadeInOut {
+  0%, 100% { opacity: 0; }
+  50% { opacity: 1; }
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+  40% { transform: translateY(-30px); }
+  60% { transform: translateY(-15px); }
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mood Tracker</title>
+<link rel="stylesheet" href="moodDetector.css">
+<link rel="icon" type="image/svg+xml" href="Untitled design (4).png" />
+</head>
+<body>
+  <div id="particles-js"></div>
+
+  <!-- Popup Box HTML -->
+  <div id="popup" class="popup">
+    <div class="popup-header">Mood Detector</div>
+    <div class="popup-content">
+      <div class="slider-container">
+        <input type="range" min="0" max="100" value="50" class="slider" id="moodSlider">
+        <div class="mood-display" id="mood-display">Move the slider to track your mood</div>
+        <div class="suggestions" id="suggestions"></div>
+      </div>
+      <button class="popup-button" onclick="redirect()">OK</button>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+  <script src="moodDetector.js"></script>
+</body>
+</html>
